@@ -1,0 +1,23 @@
+<div class="forgot-fondo">
+  <div class="forgot-caja">
+    <h2>Verificar código</h2>
+    <p>Introduce el código enviado por correo y la nueva contraseña.</p>
+
+    <div *ngIf="message" class="mensaje">{{ message }}</div>
+
+    <div class="campo">
+      <label>Correo</label>
+      <input type="email" [(ngModel)]="email" />
+    </div>
+    <div class="campo">
+      <label>Código</label>
+      <input type="text" [(ngModel)]="code" />
+    </div>
+    <div class="campo">
+      <label>Nueva contraseña</label>
+      <input type="password" [(ngModel)]="newPassword" />
+    </div>
+
+    <button (click)="verificar()" [disabled]="loading">{{ loading ? 'Verificando...' : 'Restablecer contraseña' }}</button>
+  </div>
+</div>

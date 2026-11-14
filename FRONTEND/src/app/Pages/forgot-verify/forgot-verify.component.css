@@ -1,0 +1,6 @@
+.forgot-fondo { min-height: 60vh; display:flex; align-items:center; justify-content:center; }
+.forgot-caja { background: white; padding: 24px; border-radius: 8px; width:320px; text-align:center }
+.forgot-caja .campo { margin:12px 0 }
+.forgot-caja input { width:100%; padding:8px; border-radius:6px; border:1px solid #ccc }
+.forgot-caja button { margin-top:8px; width:100%; padding:10px; background:#4338ca; color:white; border:none; border-radius:6px }
+.mensaje { margin-bottom:8px; color:green }

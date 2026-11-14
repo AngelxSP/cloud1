@@ -1,0 +1,23 @@
+<div class="page">
+  <h2>Verificar MFA</h2>
+
+  <div>
+    <label>Método</label>
+    <select [(ngModel)]="method">
+      <option value="totp">Google Authenticator (TOTP)</option>
+      <option value="email">Correo (OTP)</option>
+    </select>
+  </div>
+
+  <div *ngIf="method==='email'">
+    <button (click)="enviarEmailOtp()">Enviar código por correo</button>
+  </div>
+
+  <div>
+    <label>Código</label>
+    <input [(ngModel)]="code" />
+    <button (click)="verificar()">Verificar</button>
+  </div>
+
+  <div *ngIf="message">{{ message }}</div>
+</div>

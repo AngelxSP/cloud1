@@ -1,0 +1,27 @@
+﻿{
+    "enable":  null,
+    "verify":  {
+                   "token":  "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB0aWVuZGEuY29tIiwicm9sIjoiQWRtaW5pc3RyYWRvciIsInVzdWFyaW9JZCI6MSwiaWF0IjoxNzg5NzUwNDczLCJleHAiOjE3ODk3NzkyNzN9.BVITz_EEh9ORWPBtKyb5y_GZXeNyixwjWZStVbbv9nw",
+                   "nombre":  "Ana Torres",
+                   "email":  "admin@tienda.com",
+                   "rol":  "Administrador"
+               },
+    "setup":  {
+                  "secret":  "5QNTK7S5INGKNRPR",
+                  "otpAuthUrl":  "otpauth://totp/Ferreteria:admin@tienda.com?secret=5QNTK7S5INGKNRPR\u0026issuer=Ferreteria\u0026algorithm=SHA1\u0026digits=6\u0026period=30"
+              },
+    "login":  {
+                  "token":  "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB0aWVuZGEuY29tIiwicm9sIjoiQWRtaW5pc3RyYWRvciIsInVzdWFyaW9JZCI6MSwiaWF0IjoxNzg5NzUwNDczLCJleHAiOjE3ODk3NzkyNzN9.BVITz_EEh9ORWPBtKyb5y_GZXeNyixwjWZStVbbv9nw",
+                  "nombre":  "Ana Torres",
+                  "email":  "admin@tienda.com",
+                  "rol":  "Administrador"
+              },
+    "codes":  {
+                  "value":  [
+                                755462,
+                                125296,
+                                769600
+                            ],
+                  "Count":  3
+              }
+}

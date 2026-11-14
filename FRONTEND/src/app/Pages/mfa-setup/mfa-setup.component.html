@@ -1,0 +1,19 @@
+<div class="page">
+  <h2>Configurar MFA (Google Authenticator)</h2>
+
+  <button (click)="generar()" [disabled]="loading">Generar secreto</button>
+
+  <div *ngIf="secret">
+    <p><strong>Secret:</strong> {{ secret }}</p>
+    <p><strong>OTP Auth URL:</strong> {{ otpAuthUrl }}</p>
+    <p>Escanea el código QR con Google Authenticator o copia el secret manualmente.</p>
+
+    <div>
+      <label>Ingresa código TOTP</label>
+      <input [(ngModel)]="code" />
+      <button (click)="verificar()" [disabled]="loading">Verificar y habilitar</button>
+    </div>
+  </div>
+
+  <div *ngIf="message">{{ message }}</div>
+</div>
